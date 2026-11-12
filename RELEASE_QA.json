@@ -1,0 +1,55 @@
+{
+  "release_version": "0.2.0",
+  "status": "PASS — FINAL 17-PAGE PDF AND ARCHIVED METRICS ALIGNED",
+  "canonical_pdf_sha256": "610062a87cc4d20b8a7fb118130b2e87c7f8d443631e08c81434be0552067b0d",
+  "canonical_pdf_page_count": 17,
+  "legacy_23page_draft_present": false,
+  "unmeasured_illustrative_curves_present": false,
+  "release_data_provenance": "unchanged archived actual experimental CSVs; independently audited",
+  "graph_instances": 649,
+  "full_run_warmups": 1,
+  "full_run_timed_repeats": 7,
+  "timed_observations": 13629,
+  "node_identity_checks": 72980,
+  "witness_entries": 649,
+  "decomposition_trees": 649,
+  "passes_three_algorithm_agreement": true,
+  "passes_all_node_identity_checks": true,
+  "passes_all_coloring_certificate_checks": true,
+  "dp_yes": 461,
+  "dp_no": 188,
+  "atlas_subset": 332,
+  "atlas_yes": 331,
+  "atlas_no": 1,
+  "obstruction_entries": 12,
+  "obstruction_yes": 11,
+  "obstruction_no": 1,
+  "new_final_figure6_n192": {
+    "states_reduction_pct": 13.68,
+    "peak_traced_memory_reduction_pct": 13.21,
+    "full_time_ms": 20.68,
+    "dominance_time_ms": 38.09
+  },
+  "figure8_topology": {
+    "vertices": 71,
+    "edges": 76,
+    "max_degree": 4,
+    "cycle_rank": 6,
+    "valid_new_four_slot_certificate": true,
+    "data_provenance": "manual transcription of PDF page 15; reconstructed coloring not asserted identical to illustration"
+  },
+  "source_code_test_count": 9,
+  "fresh_quick_reexecution": {
+    "instances": 369,
+    "three_methods_agree": true,
+    "node_flags_pass": true,
+    "certificates_pass": true
+  },
+  "material_limitations": [
+    "Archived run_manifest lacks independently checkable Core i9-14900HX/32GB hardware metadata",
+    "Figure 8 per-edge colors are algorithmically recomputed, not claimed to reproduce original raster coloring",
+    "SP decomposition preprocessing may be superlinear; Proposition 18 states conditional O(n) DP",
+    "CPU time and Python memory allocations vary on fresh runs"
+  ],
+  "qa_summary": "All nine tests passed; data-alignment and Figure 8 independent checks PASS; fresh 369-case quick run PASS."
+}

@@ -1,0 +1,42 @@
+{
+  "source_article": "paper/CMC_Condensed_Illustrated_Graphs_FINAL_17p.pdf",
+  "source_scope": "FINAL 17-page PDF, not the withdrawn 23-page manuscript",
+  "classification": "ARCHIVED_DATA_ALIGNMENT_REPORT; measured performance, not simulated",
+  "canonical_benchmark_entries": 649,
+  "observed_benchmark_entries": 649,
+  "graph_input_count": 649,
+  "graph_input_categories": {
+    "graph_atlas": 332,
+    "maximal": 5,
+    "multiblock": 100,
+    "nonmaximal": 200,
+    "obstruction": 12
+  },
+  "recorded_results_categories": {
+    "graph_atlas": 332,
+    "maximal": 5,
+    "multiblock": 100,
+    "nonmaximal": 200,
+    "obstruction": 12
+  },
+  "full_649_result_set_present": true,
+  "atlas_reference_yes_no": {
+    "YES": 331,
+    "NO": 1
+  },
+  "obstruction_reference_yes_no": {
+    "NO": 1,
+    "YES": 11
+  },
+  "three_dp_variants_agree": true,
+  "all_reported_node_identities_agree": true,
+  "all_reported_witnesses_valid": true,
+  "note": "This summary is not a substitute for scripts/verify_paper_alignment.py, which rechecks stored YES witnesses and raw CSV arithmetic.",
+  "figure6_n192_archived": {
+    "random_graph_entries": 60,
+    "state_reduction_percent": 13.68,
+    "traced_memory_reduction_percent": 13.21,
+    "full_dp_time_ms": 20.68,
+    "dominance_dp_time_ms": 38.09
+  }
+}

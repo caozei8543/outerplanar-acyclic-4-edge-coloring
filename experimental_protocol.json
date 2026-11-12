@@ -1,0 +1,105 @@
+{
+  "status": "IMPLEMENTED_VERIFIED_ARCHIVED_FINAL_17PAGE",
+  "canonical_manuscript": "paper/CMC_Condensed_Illustrated_Graphs_FINAL_17p.pdf",
+  "research_question": "Does a finite simple outerplanar graph of maximum degree at most four admit an acyclic 4-edge-coloring?",
+  "mathematical_conditions": {
+    "graph_type": "finite simple undirected outerplanar",
+    "maximum_degree": 4,
+    "available_colors": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "all_four_colors_must_appear": false,
+    "terminal_set_bits": 4,
+    "bichromatic_pair_order": [
+      "12",
+      "13",
+      "14",
+      "23",
+      "24",
+      "34"
+    ],
+    "connectivity_bits": 6,
+    "exposed_pair_condition": "each pair contains exactly one color incident to s and exactly one color incident to t",
+    "dominance_comparison": "same ordered terminal masks A,B; retain inclusion-minimal exposed pair masks F",
+    "full_formal_count": 16384,
+    "exposed_formal_count": 956,
+    "max_undominated_formal_bound": 468,
+    "color_permutation_orbits": 82
+  },
+  "reproducibility_config": {
+    "random_seed": 20261106,
+    "target_order_list": [
+      12,
+      24,
+      48,
+      96,
+      192
+    ],
+    "graph_atlas_predicate": "at least one edge, max_degree<=4, outerplanar (universal apex planarity test)",
+    "graph_atlas_count": 332,
+    "atlas_yes": 331,
+    "atlas_no": 1,
+    "maximal_examples_orders": [
+      5,
+      6,
+      7,
+      12,
+      24
+    ],
+    "nonmaximal_per_order": 40,
+    "multiblock_per_order": 20,
+    "maximal_construction": "zigzag polygon triangulation of size n",
+    "nonmaximal_construction": "randomly delete nonbridge edges from zigzag triangulation",
+    "multiblock_construction": "short cycle/bridge block chain",
+    "remove_isomorphic_duplicates_within_order_and_group": true,
+    "isomorphism_filter": "WL-hash shortlist + exact NetworkX isomorphism",
+    "component_decomposition": "NetworkX biconnected_component_edges then virtual-edge two-terminal SP reductions",
+    "state_color_symmetry_normalization": false,
+    "warmups_per_graph_per_variant": 1,
+    "measured_runs_per_graph_per_variant": 7,
+    "statistic": "median of 7 per graph and unweighted mean across 60 sampled graphs per order",
+    "maximum_wall_seconds_per_variant_per_run": 60,
+    "timing_scope": "DP-only run_tree measured using perf_counter_ns; exclude decomposition, memory and verification",
+    "memory_scope": "separate tracemalloc peak, NOT process RSS",
+    "memory_unit": "decimal MB",
+    "independent_oracle": "backtracking and two-color forest verifier",
+    "independent_oracle_scope": "332 eligible Graph Atlas + 12 Q cases",
+    "certificate_check": "all adjacent edge colors differ and all two-color induced subgraphs are forests",
+    "three_modes": [
+      "full",
+      "exposed",
+      "dominance"
+    ],
+    "reported_benchmark_entries": 649,
+    "observed_node_checks": 72980,
+    "archived_timing_repetition_records": 13629,
+    "final_figure6_n192": {
+      "state_reduction_pct": 13.68,
+      "traced_memory_reduction_pct": 13.21,
+      "full_time_ms": 20.68,
+      "dominance_time_ms": 38.09
+    },
+    "figure8_visual_transcription": {
+      "vertices": 71,
+      "edges": 76,
+      "max_degree": 4,
+      "cycle_rank": 6,
+      "color_witness": "independently reconstructed; may not match printed per-edge colors"
+    }
+  },
+  "source_provenance": {
+    "canonical_artifact": "final 17-page PDF",
+    "archived_runtime_manifest": "data/empirical/full_run/run_manifest.json",
+    "reference_graph_generators": "src/outer4aec/benchmarks.py",
+    "statement_of_limits": "The 17-page paper describes an i9 laptop, but the stored execution manifest has no independent CPU/RAM hardware evidence; raw archived timing values are not portable.",
+    "figure8": "topology manually transcribed from labeled PDF, witness separately computed; not recovered original edge/slot source",
+    "not_in_release": [
+      "old 23-page draft",
+      "old 339/656 draft counts",
+      "illustrative invented performance charts"
+    ]
+  }
+}

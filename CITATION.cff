@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or data, cite the associated manuscript and the specific package version once publicly released."
+title: "Bichromatic Boundary-State Reduction for Acyclic 4-Edge-Coloring of Outerplanar Graphs with Maximum Degree at Most Four — CMC Final Reproducibility Package"
+type: software
+version: 0.2.0
+license: MIT
+keywords:
+  - outerplanar graphs
+  - acyclic edge coloring
+  - series-parallel decomposition
+  - dynamic programming
+  - reproducibility

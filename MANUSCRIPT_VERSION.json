@@ -1,0 +1,13 @@
+{
+  "canonical_pdf": "paper/CMC_Condensed_Illustrated_Graphs_FINAL_17p.pdf",
+  "sha256": "610062a87cc4d20b8a7fb118130b2e87c7f8d443631e08c81434be0552067b0d",
+  "page_count": 17,
+  "paper_title": "Bichromatic Boundary-State Reduction for Acyclic 4-Edge-Coloring of Outerplanar Graphs with Maximum Degree at Most Four",
+  "canonical_revision": "CMC condensed illustrated final PDF, 2026-11-12 author-provided upload",
+  "scope": "This final PDF replaces the formerly bundled 23-page manuscript for citation, numbering and numeric claims.",
+  "canonical_benchmark_entries": 649,
+  "canonical_atlas_entries": 332,
+  "canonical_figure6_page": 13,
+  "canonical_figure8_page": 15,
+  "publication_note": "This exact author-provided file is for article-to-code tracing; see NOTICE.md before public redistribution."
+}

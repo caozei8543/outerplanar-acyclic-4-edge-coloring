@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "outer4aec"
+version = "0.2.0"
+description = "Reproducible bichromatic boundary-state DP for acyclic 4-edge-coloring of outerplanar graphs"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["networkx==3.6.1"]
+[project.optional-dependencies]
+plot = ["matplotlib>=3.8,<4"]
+test = ["pytest>=8,<10"]
+[tool.setuptools.packages.find]
+where = ["src"]

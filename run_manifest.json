@@ -1,0 +1,32 @@
+{
+  "status": "ACTUAL_EXECUTION_NOT_SIMULATED",
+  "benchmark_file": "benchmark_instances.jsonl",
+  "profile": "full",
+  "records": 649,
+  "seed": 20261106,
+  "categories": {
+    "graph_atlas": 332,
+    "maximal": 5,
+    "multiblock": 100,
+    "nonmaximal": 200,
+    "obstruction": 12
+  },
+  "oracle_counts": {
+    "graph_atlas:NO": 1,
+    "graph_atlas:YES": 331,
+    "obstruction:NO": 1,
+    "obstruction:YES": 11
+  },
+  "warmups": 1,
+  "timed_runs": 7,
+  "timeout_s": 60.0,
+  "dp_time_unit": "milliseconds",
+  "peak_memory_unit": "decimal MB (1,000,000 bytes)",
+  "dp_time_scope": "sum of run_tree.elapsed_ns over blocks; excludes decomposition, testing, tracing",
+  "memory_scope": "tracemalloc peak of run_tree across precomputed block trees",
+  "graph_atlas_filter": "nonempty, outerplanar and max_degree<=4",
+  "python_version": "3.13.5",
+  "networkx_version": "3.6.1",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "run_wall_seconds": 177.753
+}

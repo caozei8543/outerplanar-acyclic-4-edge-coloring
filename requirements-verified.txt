@@ -1,0 +1,4 @@
+# Direct packages present during the verified 2026-11-07 run (Python 3.13.5)
+networkx==3.6.1
+matplotlib==3.10.8
+pytest==9.0.2
